@@ -255,3 +255,17 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.classList.toggle("show");
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.createElement("button");
+    menuToggle.innerHTML = "&#9776;";
+    menuToggle.classList.add("menu-toggle");
+    document.querySelector("header").appendChild(menuToggle);
+
+    const nav = document.querySelector("nav ul");
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("show");
+        menuToggle.classList.toggle("active");
+    });
+});
+
+
