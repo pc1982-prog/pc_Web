@@ -284,5 +284,22 @@ document.addEventListener("DOMContentLoaded", function () {
         menuToggle.classList.toggle("active");
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.createElement("button");
+    menuToggle.innerHTML = "&#9776;"; // Hamburger icon
+    menuToggle.classList.add("menu-toggle");
+
+    const header = document.querySelector("header");
+    const nav = document.querySelector("nav ul");
+
+    if (window.innerWidth <= 768) {
+        header.insertBefore(menuToggle, nav);
+        nav.classList.add("nav-links"); // Add class for styling
+    }
+
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("show");
+    });
+});
 
 
