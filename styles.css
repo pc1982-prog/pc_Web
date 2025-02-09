@@ -941,6 +941,23 @@ footer {
     }
 }
 /* ======= Responsive Styles for Better Mobile Support ======= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -1004,7 +1021,7 @@ footer {
 
     .service-grid,
     .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact-content {
