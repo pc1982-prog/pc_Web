@@ -1111,4 +1111,10 @@ video {
         font-size: 1.1rem;
     }
 }
+/* Hide the menu toggle button on larger screens */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+}
 
