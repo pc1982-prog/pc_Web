@@ -870,6 +870,38 @@ footer {
     nav ul.show {
         display: flex;
     }
+            /* Ensure services and gallery maintain a grid layout on mobile */
+        .service-grid,
+        .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* Keep 2 columns on mobile */
+            gap: 10px;
+            /* Reduce gap for better fit */
+            padding: 1rem;
+        }
+    
+        /* Reduce service card padding to prevent overflow */
+        .service-card {
+            padding: 1rem;
+            border-radius: 6px;
+        }
+    
+        /* Ensure gallery images fit properly */
+        .gallery-grid img {
+            height: auto;
+            max-width: 100%;
+            border-radius: 6px;
+        }
+    /* Reduce "Our Clients" heading size on mobile */
+.our-work h2 {
+    font-size: 2rem; /* Adjust to a reasonable size */
+}
+
+/* Adjust spacing below "Our Clients" to look cleaner */
+.our-work {
+    padding: 2rem 1rem;
+}
+
 /* ======= Responsive Styles for Better Mobile Support ======= */
 @media (max-width: 1024px) {
     .hero h1 {
