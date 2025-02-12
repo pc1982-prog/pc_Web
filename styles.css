@@ -1131,11 +1131,12 @@ video {
     }
 
     /* Ensure images don't stretch */
-/*     .service-card img {
+     .service-card img {
         width: 100%;
         height: auto;
         object-fit: cover; /* Maintain aspect ratio */
-    } */
+        border-radius: 8px;
+     } 
 
     .service-card h3 {
         font-size: 1rem; /* Reduce heading size */
@@ -1151,12 +1152,6 @@ video {
     object-fit: cover; /* Crop images to fit */
     border-radius: 8px;
    }
-    .service-card img {
-    width: 10%;
-    height: auto; 
-    object-fit: cover; /* Prevent stretching */
-    border-radius: 8px;
-}
 
 }
 
