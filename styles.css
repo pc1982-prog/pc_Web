@@ -1152,7 +1152,7 @@ video {
     border-radius: 8px;
    }
     .service-card img {
-    width: auto;
+    width: 10%;
     height: auto; 
     object-fit: cover; /* Prevent stretching */
     border-radius: 8px;
