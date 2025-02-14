@@ -225,51 +225,44 @@ nav ul li a.active {
     margin-top: 50px;
 } */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 2rem;
+    position: relative;
+    width: 100%;
     height: 100vh;
-    background-color: #1a1a1a;
     overflow: hidden;
 }
 
 .background-video {
-    width: 60%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .hero-content {
-    width: 35%;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 12px;
-    color: var(--highlight-color);
+    color: #fff;
     text-align: center;
+    width: 80%;
+    max-width: 500px;
 }
 
 /* Mobile View Adjustments */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .background-video {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-
     .hero-content {
-        width: 100%;
-        margin-top: 1rem;
+        width: 90%;
         padding: 1rem;
     }
 }
+
 
 /* end of new hero */
 
