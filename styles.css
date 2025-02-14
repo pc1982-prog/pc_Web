@@ -5,10 +5,25 @@
     --text-color: #F7FFF7;
     --card-background: #16213E;
 } */
+/* Fix scrolling issue for navigation anchors */
 html {
-  scroll-behavior: smooth; /* Smooth scrolling */
-  scroll-padding-top: 80px; /* Adjust for fixed header if any */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-padding-top: 120px; /* Offset for sticky headers */
 }
+
+section {
+  position: relative;
+  padding-top: 120px; /* Create space above headings */
+  margin-top: -120px; /* Adjust overlap for proper alignment */
+}
+
+/* Ensure header is properly fixed if using sticky nav */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 
 
 :root {
