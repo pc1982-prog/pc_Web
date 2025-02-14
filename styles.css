@@ -10,11 +10,6 @@ html {
   scroll-padding-top: 80px; /* Adjust for fixed header if any */
 }
 
-/* Optional: Extra padding for sections */
-section {
-  padding-top: 100px;
-  margin-top: -100px;
-}
 
 :root {
     --primary-color: #f21b13;
